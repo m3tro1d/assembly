@@ -1,0 +1,11 @@
+nasm file:
+segment .text
+extern _func
+global _asm_main
+_asm_main:
+  call _func
+
+C file:
+void func() {
+  // Blah
+}
